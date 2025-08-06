@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Love Machine Wellness</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { background: #FFD700; color: #4B0082; font-family: Arial, sans-serif; margin: 0; }
+.container { max-width: 700px; margin: 32px auto; padding: 24px; background: #fff; border-radius: 15px; }
+.logo { display: block; margin: 0 auto 16px auto; width: 160px; height: 160px; border-radius: 28px; object-fit: contain; border: 3px solid #4B0082; background: #FFD700;}
+h1 { text-align: center; color: #4B0082; }
+.certs { text-align: center; margin-bottom: 20px; font-weight: bold; }
+.prices { margin-bottom: 24px; }
+.tabs { text-align: center; margin-bottom: 18px; }
+.tab { display: inline-block; background: #4B0082; color: #FFD700; padding: 8px 16px; margin: 0 4px; border-radius: 7px; cursor: pointer; font-weight: bold; }
+.tab.active { background: #FFD700; color: #4B0082; border: 1.5px solid #4B0082; }
+.services { display: none; margin-top: 15px; }
+.services.active { display: block; }
+ul { padding-left: 20px; }
+li { margin-bottom: 10px; }
+.contact { margin-top: 32px; padding: 13px; background: #FFD700; border-radius: 10px; color: #4B0082; font-weight: bold; text-align: center; }
+.book-btn { background: #4B0082; color: #FFD700; padding: 12px 22px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; margin: 12px 0; }
+.book-btn:hover { background: #FFD700; color: #4B0082; border: 2px solid #4B0082; }
+.web-btn { background: #fff; color: #4B0082; border: 2px solid #4B0082; padding: 12px 22px; border-radius: 8px; font-size: 1.1em; cursor: pointer; margin: 12px 0; }
+.web-btn:hover { background: #FFD700; color: #4B0082; }
+table { width: 100%; border-collapse: collapse; background: #FFF8DC; }
+th, td { padding: 8px 6px; }
+th { border-bottom: 2px solid #4B0082; }
+tr:not(:first-child) td { border-top: 1px solid #f3e7b5; }
+.insurance-note { color:#4B0082; background: #FFF8DC; border-radius: 8px; margin: 14px 0; padding: 10px 12px; text-align: center; font-size: 15px; }
+@media (max-width: 650px) {
+.container { padding: 10px; }
+.prices table { font-size: 15px; }
+.logo { width: 100px; height: 100px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img src="logo.png" alt="Love Machine Wellness Logo" class="logo" />
+<h1>Love Machine Wellness</h1>
+<div class="certs">
+Certified Nursing Assistant | Medical Assistant (NHA) | Phlebotomist (NHA) | CBRF Care Aide
+</div>
+<div class="prices">
+<h2 style="color:#4B0082; text-align:center; margin-bottom:10px;">Service Price List</h2>
+<table>
+<tr>
+<th style="text-align:left; color:#4B0082;">Service</th>
+<th style="text-align:right; color:#4B0082;">Price</th>
+</tr>
+<tr>
+<td>CNA Services (per hour)</td>
+<td style="text-align:right;">$32</td>
+</tr>
+<tr>
+<td>CBRF Care (per hour)</td>
+<td style="text-align:right;">$32</td>
+</tr>
+<tr>
+<td>Medical Assistant Visit</td>
+<td style="text-align:right;">$40</td>
+</tr>
+<tr>
+<td>Phlebotomy/Blood Draw (in-home)</td>
+<td style="text-align:right;">$30</td>
+</tr>
+<tr>
+<td>Travel/Setup Fee (one-time, if outside Milwaukee)</td>
+<td style="text-align:right;">$10</td>
+</tr>
+</table>
+<div style="color:#4B0082; text-align:center; margin-top:10px; font-size:14px;">
+*Special rates for those in need. Contact us for details.*
+</div>
+</div>
+<div class="insurance-note">
+<strong>Insurance Notice:</strong><br>
+At this time, Love Machine Wellness cannot bill insurance or Medicaid/Medicare directly. Services are private-pay only. Many clients use HSA or FSA cards. Receipts for reimbursement are available upon request.
+</div>
+<div style="text-align:center; margin-bottom:18px; margin-top: 14px;">Where Care Meets Excellence</div>
+<div class="tabs">
+<span class="tab active" onclick="showTab(0)">CNA</span>
+<span class="tab" onclick="showTab(1)">CBRF</span>
+<span class="tab" onclick="showTab(2)">Medical Assistant</span>
+<span class="tab" onclick="showTab(3)">Phlebotomy</span>
+</div>
+<!-- CNA Services -->
+<div class="services active">
+<h3>CNA Services (No Supervision Needed)</h3>
+<ul>
+<li>Check and record vital signs</li>
+<li>Bathing, dressing, grooming, oral care</li>
+<li>Toileting and incontinence care</li>
+<li>Meals & feeding help</li>
+<li>Mobility, transfers, walking, wheelchair help</li>
+<li>Range of motion exercises</li>
+<li>Change bed linens & clean room</li>
+<li>Minor wound care only</li>
+<li>Collect urine/stool for lab</li>
+<li>Weigh and measure height</li>
+<li>Apply compression stockings</li>
+<li>Companionship, safety checks</li>
+<li>Handwashing and PPE</li>
+</ul>
+</div>
+<!-- CBRF -->
+<div class="services">
+<h3>CBRF Services (No Supervision Needed)</h3>
+<ul>
+<li>Medication reminders (no shots/narcotics)</li>
+<li>Bathing, grooming, dressing help</li>
+<li>Mobility and transfers</li>
+<li>Toileting and incontinence</li>
+<li>Meal prep and feeding</li>
+<li>Light housekeeping, laundry</li>
+<li>Social activities, companionship</li>
+<li>Vital signs (if trained)</li>
+<li>Monitor & document changes</li>
+<li>Minor wound care only</li>
+<li>Handwashing and PPE</li>
+<li>Safety checks, fall prevention</li>
+<li>Respite care for family</li>
+</ul>
+</div>
+<!-- Medical Assistant -->
+<div class="services">
+<h3>Medical Assistant Services (No Supervision Needed)</h3>
+<ul>
+<li>Take vital signs (BP, temp, pulse, O2, height, weight)</li>
+<li>Prepare for exams, set up rooms</li>
+<li>Collect health history</li>
+<li>Minor wound care only</li>
+<li>Vision/hearing screening</li>
+<li>Suture/staple removal (if trained)</li>
+<li>EKG (if trained)</li>
+<li>Medication reconciliation</li>
+<li>Patient education (handouts)</li>
+<li>Clean rooms, stock supplies</li>
+<li>Answer phones/messages</li>
+<li>Give oral/topical meds (if allowed)</li>
+</ul>
+</div>
+<!-- Phlebotomy -->
+<div class="services">
+<h3>Phlebotomy Services (No Supervision Needed)</h3>
+<ul>
+<li>Blood draw (venipuncture, not IVs/arteries)</li>
+<li>Fingerstick blood collection</li>
+<li>Blood cultures (routine)</li>
+<li>Glucose monitoring (fingerstick)</li>
+<li>Collect urine/stool/swab for lab</li>
+<li>Label & prep for lab</li>
+<li>Bandage after blood draw, check comfort</li>
+</ul>
+</div>
+<div style="text-align:center;">
+<button class="book-btn" onclick="window.open('https://calendly.com/management-lovemachinewellness','_blank')">
+Book Appointment
+</button>
+</div>
+<div class="contact">
+Email: management.lovemachinewellness@outlook.com<br>
+Call: 414-206-9170<br>
+Serving Milwaukee County &amp; Nearby Areas
+</div>
+<div style="text-align:center;">
+<button class="web-btn" onclick="window.open('https://lovemachinewellness.netlify.app','_blank')">
+Visit Our Website
+</button>
+</div>
+</div>
+<script>
+function showTab(idx) {
+var tabs = document.querySelectorAll('.tab');
+var svcs = document.querySelectorAll('.services');
+for(var i=0; i<tabs.length; i++) {
+tabs[i].classList.toggle('active', i==idx);
+svcs[i].classList.toggle('active', i==idx);
+}
+}
+</script>
+</body>
+</html>
