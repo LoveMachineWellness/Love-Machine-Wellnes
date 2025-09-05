@@ -1,0 +1,6 @@
+<div id="paypal-container-E6ZGAJE5GFWK2"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "E6ZGAJE5GFWK2",
+  }).render("#paypal-container-E6ZGAJE5GFWK2")
+</script>
